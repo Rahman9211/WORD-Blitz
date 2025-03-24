@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>My To-Do List</h1>
+    <ul id="todoList"></ul>
+    <button id="addTask">Add Task</button>
+
+    <script>
+        document.getElementById("addTask").addEventListener("click", () => {
+            const newTask = document.createElement("li"); // Create <li>
+            newTask.innerText = "New Task";
+            document.getElementById("todoList").appendChild(newTask); // Add to <ul>
+        });
+    </script>
+</body>
+</html>
